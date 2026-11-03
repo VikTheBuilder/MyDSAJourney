@@ -9,3 +9,19 @@ class Solution {
         return result;
     }
 }
+//faster--
+class Solution {
+    public int minMoves(int[] nums) {
+        int max = nums[0];
+        for (int x : nums){
+            if (x > max){
+                max = x;
+            }
+        }
+        int result = 0;
+        for (int x : nums){
+            result += max - x;
+        }
+        return result;
+    }
+}
