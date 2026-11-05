@@ -10,7 +10,7 @@ class Solution {
                     break;
                 }
             }
-            if (isValid){
+            if(isValid){
                 count++;
             }
         }
